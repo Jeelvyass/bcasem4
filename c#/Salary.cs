@@ -3,7 +3,7 @@ using System;
 class Salary
 {
     // Method to calculate Gross Salary using ref and out parameters
-    public void Calculation(ref double basicsalary, out double grosssalary)
+    public void Calculation(ref int basicsalary, out double grosssalary)
     {
         // Declare and initialize variables
         double TA = 0, DA = 0, HRA = 0, PF = 0;
@@ -36,7 +36,7 @@ class Program
     static void Main()
     {
         Console.Write("Enter Basic Salary: ");
-        double basicsalary = Convert.ToDouble(Console.ReadLine()); 
+        int basicsalary = Convert.ToInt32(Console.ReadLine()); 
         double grosssalary; // Out variable
 
         // Create object of Salary class
